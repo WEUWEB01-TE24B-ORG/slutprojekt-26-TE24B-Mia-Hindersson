@@ -1,0 +1,85 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #672f2f;
+}
+
+.navbar {
+    margin-top: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    background: #333;
+    color: aliceblue;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    border-radius: 5px;
+}
+
+/* START */
+.start {
+    text-align: center;
+    padding: 2rem;
+    background-color: #845d5d;
+}
+
+.start-img {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.start-img img {
+    width: 30%;
+}
+
+/* ABOUT */
+.about{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+.about img{
+    width: 200px;
+}
+
+/* GRID */
+.series{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+/* GRID STYLING*/
+.grid{
+    
+}
