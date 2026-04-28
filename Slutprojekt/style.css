@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Playwrite+NO:wght@100..400&display=swap');
+¨
+
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -22,31 +25,66 @@ ul {
     padding: 0;
 }
 
+/* COLORS */
+:root {
+    --baby-pink: #ff99c8ff;
+    --lemon-chiffon: #fcf6bdff;
+    --frosted-mint: #d0f4deff;
+    --icy-blue: #a9def9ff;
+    --mauve: #e4c1f9ff;
+    --parchment: #edede9ff;
+    --dust-grey: #d6ccc2ff;
+    --linen: #f5ebe0ff;
+    --powder-petal: #e3d5caff;
+    --almond-silk: #d5bdafff;
+}
+
+/* BODY */
+body {
+    background-color: var(--almond-silk);
+    color: var(--baby-pink);
+    font-family: "Leckerli One", cursive;
+}
+
 /* HEADER */
 header {
     text-align: center;
     padding: 1rem;
-    background-color: #672f2f;
+    background-color: var(--powder-petal);
+    font-family: "Playwrite NO", cursive;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
 }
 
 .navbar {
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
 }
 
 .navbar a {
     text-decoration: none;
-    background: #333;
+    background: var(--baby-pink);
     color: aliceblue;
     padding: 0.5rem 1rem;
     margin: 0.3rem;
     border-radius: 5px;
 }
 
+.navbar a:hover {
+    background-color: var(--mauve);
+}
+
 /* START */
 .start {
     text-align: center;
     padding: 2rem;
-    background-color: #845d5d;
+    background-color: var(--linen);
 }
 
 .start-img {
@@ -61,25 +99,65 @@ header {
 }
 
 /* ABOUT */
-.about{
-    display: flex;
-    gap: 2rem;
+.about {
     padding: 2rem;
-    align-items: center;
+    background: var(--frosted-mint);
+    display: flex;
+    align-items: flex-start;
 }
-.about img{
-    width: 200px;
+.about h2{
+    text-align: center;
+    padding: 10px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-text{
+    max-width: 400px;
 }
 
 /* GRID */
-.series{
+.series-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 2rem;
+    background: var(--frosted-mint);
 }
 
-/* GRID STYLING*/
-.grid{
-    
+/* GRID STYLING */
+.series-grid img{
+    width: 700px;
+    height: 700px;
+}
+ .series {
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3ms;
+}
+.series img{
+    width: 700px;
+    height: 400px;
+}
+
+.series:hover {
+    transform: scale(1.05);
+}
+
+/* BLINDBOX */
+.blindbox {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--icy-blue);
 }
