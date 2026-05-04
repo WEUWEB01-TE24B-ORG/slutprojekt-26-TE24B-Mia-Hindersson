@@ -1,4 +1,3 @@
-<script src="script.js"></script>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,18 +22,47 @@
     </header>
     <main>
         <!-- blindbox -->
+          <h2>Blindbox</h2>
         <section class="blindbox">
-            <h2>Blindbox</h2>
-<img class="figure-img" src="./bilder/roadjournal.png" alt="blind box">
-<h2 class="figure-name">????</h2>
-<p class="figure-rarity">???</p>
-<button onclick="openBox()"> Open Box</button>
+            <div class="blindbox-layout">
+                <!-- LEFT -->
+                <div class="blindbox-left">
+                    <img class="figure-img" id="figure-img" src="./bilder/roadjournal.png" alt="blind box">
+                     <h2 class="figure-img" id="figure-name">????</h2>
+                       <p class="figure-img" id="figure-rarity">???</p>
+                        <button onclick="openBox()"> Open Box</button>
+                </div>
+                <!-- RIGHT -->
+                 <div class="blindbox-right">
+                    <p class="label">Which will you get?</p>
+                    <div class="grid">
+                        <div class="card">
+                             <img src="./bilder/birdy.png" alt="Birdy">
+                             <span>Common</span>
+                        </div>
+                        <div class="card">
+                             <img src="./bilder/sardine.png" alt="sardine">
+                             <span>Rare</span>
+                        </div>
+                        <div class="card">
+                             <img src="./bilder/house.png" alt="House">
+                             <span>Secret</span>
+                        </div>
+                        <div class="card">
+                             <img src="./bilder/snoopy.png" alt="Snoopy">
+                             <span>ULTRA SECRET</span>
+                        </div>
+                    </div>
+                 </div>
+            </div>
         </section>
-        <audio src=""></audio>
-        <!-- FOOTER -->
-        <footer>
-            <p>Hirono Guide | School Project</p>
-        </footer>
+    </main>
+    <audio src=""></audio>
+    <!-- FOOTER -->
+    <footer>
+        <p>Hirono Guide | School Project</p>
+    </footer>
+     <script src="script.js"></script>
 </body>
 
 </html>

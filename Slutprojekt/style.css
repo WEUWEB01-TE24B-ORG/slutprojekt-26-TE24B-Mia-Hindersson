@@ -44,6 +44,10 @@ body {
     background-color: var(--almond-silk);
     color: var(--baby-pink);
     font-family: "Leckerli One", cursive;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
 }
 
 /* HEADER */
@@ -55,7 +59,7 @@ header {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 2px;
 }
 
@@ -63,6 +67,7 @@ h1 {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -72,13 +77,23 @@ h1 {
     color: aliceblue;
     padding: 0.5rem 1rem;
     margin: 0.3rem;
+    font-size: 1rem;
     border-radius: 5px;
     border: var(--frosted-mint) solid 4px;
+    transition: background 0.3s;
 }
 
 .navbar a:hover {
     background-color: var(--mauve);
-    border: var(--frosted-mint) solid 4px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--icy-blue);
+    font-size: 1rem;
+    margin-top: auto;
 }
 
 /* START */
@@ -88,9 +103,21 @@ h1 {
     background-color: var(--linen);
 }
 
+.start h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.start-intro {
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.7;
+}
+
 .start-img {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1rem;
 }
@@ -98,105 +125,334 @@ h1 {
 .start-img img {
     width: 30%;
     border: var(--frosted-mint) solid 10px;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 /* ABOUT */
 .about {
     padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
-.about h2{
+
+.about-title {
     text-align: center;
-    padding: 10px;
+    padding: 0.6rem 1rem;
     color: var(--frosted-mint);
     background: var(--baby-pink);
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
 }
-.row{
+
+.about-row {
     display: flex;
     align-items: center;
     gap: 1rem;
     background: var(--frosted-mint);
-    padding: 20px;
+    padding: 1.25rem;
+    border-radius: 10px;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
 }
 
-.about-text{
-    max-width: 500px;
+.about-row img {
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 6px solid var(--powder-petal);
 }
 
-.large-section{
+.about-text {
+    flex: 1;
+    min-width: 200px;
+    font-weight: 200;
+    line-height: 1.7;
+}
+
+.large-section {
     text-align: center;
     margin-top: 2rem;
     background: var(--frosted-mint);
-    padding: 20px;
+    padding: 1.5rem 1.25rem;
 }
+
 .large-section img {
-   width: 100%;
-   max-width: 600px;
-   background: #ccc;
+    width: 100%;
+    max-width: 500px;
+    background: #ccc;
+    border-radius: 8px;
+    margin: 0 auto;
+    object-fit: cover;
+    border: 6px solid var(--powder-petal);
 }
-.large-section p{
-margin-top: 1rem;
-/* margin-left: 420px;
-width: 700px; */
+
+.large-section p {
+    margin-top: 1rem;
+    font-weight: 200;
+    line-height: 1.7;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-/* GRID */
+/* SERIES */
+.series-section {
+    padding: 2rem 1.5rem;
+    min-height: 60vh;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.series-title {
+    text-align: center;
+    margin-bottom: 0.7rem;
+    font-size: 2rem;
+    color: var(--frosted-mint);
+    background: var(--baby-pink);
+    border-radius: 8px;
+}
+
 .series-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     padding: 2rem;
+    margin: 0 auto;
+    max-width: 980px;
     background: var(--frosted-mint);
 }
 
-/* GRID STYLING */
 
- .series {
+.series-card {
+    background: var(--frosted-mint);
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
-    transition: 0.3ms;
-}
-.series img{
-    width: 700px;
-    height: 400px;
+    transition: 0.25ms ease, box-shadow 0.25ms ease;
+    border-radius: 3px solid var(--powder-petal);
 }
 
-.series:hover {
+.series-card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 0 auto 0.75rem;
+    border: 6px solid var(--powder-petal);
+}
+
+.series-card h3 {
+    font-size: 2rem;
+}
+
+.series-card p {
+    font-size: 1.3rem;
+}
+
+.series-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(180, 130, 110, 0.2);
 }
 
-
+.large-img {
+    width: 100%;
+    border-radius: 10px;
+    border: 6px solid var(--powder-petal);
+    object-fit: cover;
+}
 
 /* BLINDBOX */
 .blindbox {
-    text-align: center;
-    padding: 3rem;
-}
-.blindbox img{
-    width: 300px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-.blindbox h2{
-    margin-top: 1rem;
-    letter-spacing: 2px;
-}
-.blindbox p{
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-}
-button{
-    background: var(--frosted-mint);
-    color: var(--baby-pink);
-    padding: 0.7rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 3rem 1.5rem;
+    margin: 0 auto;
+    max-width: 870px;
 }
 
-/* FOOTER */
-footer {
+.blindbox h2 {
     text-align: center;
-    padding: 1rem;
-    background: var(--icy-blue);
+    margin-top: 1rem;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.blindbox-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.blindbox-left {
+    background: var(--linen);
+    border-radius: 14px;
+    border: 4px solid var(--frosted-mint);
+    padding: 2rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.figure-img {
+    /* width: 100%; */
+    max-width: 400px;
+    object-fit: contain;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    aspect-ratio: 1/1;
+}
+
+.figure-name {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.4rem;
+}
+
+.figure-rarity {
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-bottom: 1.25rem;
+}
+
+.blindbox-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+
+}
+
+.label {
+    font-weight: 200;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--frosted-mint);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem;
+    width: 100%;
+}
+
+.card {
+    background: var(--linen);
+    border: 2.5px solid var(--powder-petal);
+    border-radius: 10px;
+    padding: 0.7rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.card img {
+    object-fit: contain;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.card img span {
+    font-weight: 200;
+    font-size: 0.7rem;
+}
+
+button {
+    background: var(--frosted-mint);
+    color: var(--baby-pink);
+    border: 2.5px solid var(--powder-petal);
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s, transform 0.15s;
+    font-family: "Playwrite NO", cursive;
+}
+
+button:hover {
+    background-color: var(--mauve);
+    transform: scale(1.04);
+     border: 2.5px solid var(--frosted-mint);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* TABLET */
+@media (max-width: 700px) {
+    .series-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .blindbox-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .blindbox-left {
+        max-width: 320px;
+        margin: 0 auto;
+
+    }
+
+    .grid {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .about-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-row img {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+
+    }
+}
+
+/* mobile */
+@media (max-width: 480px) {
+    header {
+        padding: 0.75rem 1rem;
+    }
+
+    .navbar {
+        gap: 0.35rem;
+    }
+
+    .navbar a {
+        padding: 0.4rem 0.75rem;
+    }
+
+    .start-img img {
+        width: clamp(100px, 42vw, 180px);
+        border-width: 5px;
+    }
+
+    .series-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+    }
+    .about{
+         padding: 1.25rem 1rem;
+    }
+    .about-row{
+        padding: 1rem;
+    }
+    .series-section{
+         padding: 1.25rem 1rem;
+    }
+    .blindbox{
+         padding: 1.5rem 1rem;
+    }
 }
