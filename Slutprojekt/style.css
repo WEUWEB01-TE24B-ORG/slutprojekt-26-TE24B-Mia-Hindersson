@@ -100,7 +100,13 @@ footer {
 .start {
     text-align: center;
     padding: 2rem;
+}
+
+.start-combine {
     background-color: var(--linen);
+    border: 6px solid var(--frosted-mint);
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .start h2 {
@@ -109,7 +115,6 @@ footer {
 }
 
 .start-intro {
-    max-width: 500px;
     margin: 0 auto 1.5rem;
     line-height: 1.7;
 }
@@ -139,8 +144,9 @@ footer {
 .about-title {
     text-align: center;
     padding: 0.6rem 1rem;
-    color: var(--frosted-mint);
-    background: var(--baby-pink);
+    color: var(--baby-pink);
+    background: var(--linen);
+    border: 6px solid var(--frosted-mint);
     border-radius: 6px;
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
@@ -150,7 +156,8 @@ footer {
     display: flex;
     align-items: center;
     gap: 1rem;
-    background: var(--frosted-mint);
+    background: var(--linen);
+    border: 6px solid var(--frosted-mint);
     padding: 1.25rem;
     border-radius: 10px;
     margin-bottom: 1.25rem;
@@ -162,7 +169,7 @@ footer {
     height: 300px;
     border-radius: 8px;
     object-fit: cover;
-    border: 6px solid var(--powder-petal);
+    border: 6px solid var(--frosted-mint);
 }
 
 .about-text {
@@ -175,8 +182,10 @@ footer {
 .large-section {
     text-align: center;
     margin-top: 2rem;
-    background: var(--frosted-mint);
+    background: var(--linen);
     padding: 1.5rem 1.25rem;
+    border: 6px solid var(--frosted-mint);
+    border-radius: 14px;
 }
 
 .large-section img {
@@ -186,7 +195,7 @@ footer {
     border-radius: 8px;
     margin: 0 auto;
     object-fit: cover;
-    border: 6px solid var(--powder-petal);
+    border: 6px solid var(--frosted-mint);
 }
 
 .large-section p {
@@ -211,8 +220,9 @@ footer {
     text-align: center;
     margin-bottom: 0.7rem;
     font-size: 2rem;
-    color: var(--frosted-mint);
-    background: var(--baby-pink);
+    color: var(--baby-pink);
+    background: var(--linen);
+    border: 6px solid var(--frosted-mint);
     border-radius: 8px;
 }
 
@@ -223,17 +233,19 @@ footer {
     padding: 2rem;
     margin: 0 auto;
     max-width: 980px;
-    background: var(--frosted-mint);
+    background: var(--linen);
+    border: 6px solid var(--frosted-mint);
+    border-radius: 8px;
+
 }
 
 
 .series-card {
-    background: var(--frosted-mint);
+    background: var(--linen);
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
     transition: 0.25ms ease, box-shadow 0.25ms ease;
-    border-radius: 3px solid var(--powder-petal);
 }
 
 .series-card img {
@@ -242,7 +254,7 @@ footer {
     object-fit: cover;
     border-radius: 6px;
     margin: 0 auto 0.75rem;
-    border: 6px solid var(--powder-petal);
+    border: 6px solid var(--frosted-mint);
 }
 
 .series-card h3 {
@@ -261,7 +273,7 @@ footer {
 .large-img {
     width: 100%;
     border-radius: 10px;
-    border: 6px solid var(--powder-petal);
+    border: 6px solid var(--frosted-mint);
     object-fit: cover;
 }
 
@@ -269,10 +281,21 @@ footer {
 .blindbox {
     padding: 3rem 1.5rem;
     margin: 0 auto;
-    max-width: 870px;
+    max-width: 1000px;
 }
 
 .blindbox h2 {
+    text-align: center;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+    font-size: 20px;
+    background: var(--linen);
+    border: 6px solid var(--frosted-mint);
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
+.blindbox h3 {
     text-align: center;
     margin-top: 1rem;
     letter-spacing: 2px;
@@ -298,24 +321,23 @@ footer {
     gap: 0.75rem;
 }
 
-.figure-img {
-    /* width: 100%; */
-    max-width: 400px;
+.figure-img  {
+    width: 400px;
+    height: 400px;
     object-fit: contain;
     transition: opacity 0.35s ease, transform 0.35s ease;
     aspect-ratio: 1/1;
+    border-radius: 8px;
 }
 
 .figure-name {
     font-size: 1rem;
     letter-spacing: 2px;
-    margin-bottom: 0.4rem;
 }
 
 .figure-rarity {
     font-size: 0.9rem;
     font-weight: 200;
-    margin-bottom: 1.25rem;
 }
 
 .blindbox-right {
@@ -331,6 +353,7 @@ footer {
     font-size: 2rem;
     text-align: center;
     color: var(--frosted-mint);
+    text-shadow: 2px 2px var(--baby-pink) ;
 }
 
 .grid {
@@ -342,7 +365,7 @@ footer {
 
 .card {
     background: var(--linen);
-    border: 2.5px solid var(--powder-petal);
+    border: 6px solid var(--frosted-mint);
     border-radius: 10px;
     padding: 0.7rem;
     text-align: center;
@@ -354,8 +377,10 @@ footer {
 
 .card img {
     object-fit: contain;
-    width: 100%;
     aspect-ratio: 1/1;
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
 }
 
 .card img span {
@@ -378,7 +403,7 @@ button {
 button:hover {
     background-color: var(--mauve);
     transform: scale(1.04);
-     border: 2.5px solid var(--frosted-mint);
+    border: 2.5px solid var(--frosted-mint);
 }
 
 button:active {
@@ -386,7 +411,7 @@ button:active {
 }
 
 /* TABLET */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .series-grid {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
@@ -443,16 +468,20 @@ button:active {
         grid-template-columns: 1fr 1fr;
         gap: 0.75rem;
     }
-    .about{
-         padding: 1.25rem 1rem;
+
+    .about {
+        padding: 1.25rem 1rem;
     }
-    .about-row{
+
+    .about-row {
         padding: 1rem;
     }
-    .series-section{
-         padding: 1.25rem 1rem;
+
+    .series-section {
+        padding: 1.25rem 1rem;
     }
-    .blindbox{
-         padding: 1.5rem 1rem;
+
+    .blindbox {
+        padding: 1.5rem 1rem;
     }
 }
