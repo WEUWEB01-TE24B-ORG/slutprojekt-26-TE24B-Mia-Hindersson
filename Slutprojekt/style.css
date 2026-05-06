@@ -132,6 +132,13 @@ footer {
     border: var(--frosted-mint) solid 10px;
     border-radius: 8px;
     object-fit: cover;
+    transition: 0.25ms ease, box-shadow 0.25ms ease;
+}
+
+.start-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(180, 130, 110, 0.2);
+
 }
 
 /* ABOUT */
@@ -321,7 +328,7 @@ footer {
     gap: 0.75rem;
 }
 
-.figure-img  {
+.figure-img {
     width: 400px;
     height: 400px;
     object-fit: contain;
@@ -336,7 +343,7 @@ footer {
 }
 
 .figure-rarity {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 200;
 }
 
@@ -353,7 +360,7 @@ footer {
     font-size: 2rem;
     text-align: center;
     color: var(--frosted-mint);
-    text-shadow: 2px 2px var(--baby-pink) ;
+    text-shadow: 2px 2px var(--baby-pink);
 }
 
 .grid {
@@ -386,6 +393,55 @@ footer {
 .card img span {
     font-weight: 200;
     font-size: 0.7rem;
+}
+
+/* RARITY COLORS */
+.rarity-common {
+    color: burlywood;
+}
+
+.rarity-rare {
+    color: var(--icy-blue);
+}
+
+.rarity-secret {
+    color: gold;
+}
+
+.rarity-ultra-secret {
+    color: plum;
+}
+
+.card.winner,
+possible-card.winner {
+    border-color: var(--baby-pink);
+    box-shadow: 0 0 14px rgba(255, 153, 200, 0.7);
+}
+
+@keyframes shake {
+    0% {transform: rotate(0deg) scale(1);}
+
+    15% {transform: rotate(-10deg) scale(1.05)}
+
+    30% {transform: rotate(10deg) scale(1.05)}
+
+    45% {transform: rotate(-7deg) scale(1.03)}
+
+    60% {transform: rotate(7deg) scale(1.03)}
+
+    75% {transform: rotate(-4deg) scale(1.01)}
+
+    90% {transform: rotate(4deg) scale(1.01)}
+
+    100% {transform: rotate(0deg) scale(1)}
+}
+.shake{
+    animation: shake 0.5s ease;
+}
+#open-counter {
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 0.4rem;
 }
 
 button {
@@ -445,7 +501,7 @@ button:active {
     }
 }
 
-/* mobile */
+/* MOBILE */
 @media (max-width: 480px) {
     header {
         padding: 0.75rem 1rem;
